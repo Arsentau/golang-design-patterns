@@ -1,4 +1,4 @@
-package bridge
+package printers
 
 type Printer interface {
 	PrintFile()
