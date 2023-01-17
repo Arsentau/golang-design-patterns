@@ -1,9 +1,11 @@
 package main
 
 import (
-	b "github.com/Arsentau/golang-design-patterns/internal/pkg/bridge"
+	"github.com/Arsentau/golang-design-patterns/internal/pkg/bridge"
+	manual "github.com/Arsentau/golang-design-patterns/internal/pkg/dependency_injection/manual"
 )
 
 func main() {
-	b.Bridge()
+	manual.DependencyInjection()
+	bridge.Bridge()
 }
