@@ -33,7 +33,6 @@ func DependencyInjection() {
 
 	service := newService(logger, repository, broker)
 
-	fmt.Println("*************Dependencies manually Injected*************")
 	fmt.Println(service.logger.message)
 	fmt.Println(service.repository.message)
 	fmt.Println(service.broker.message)
