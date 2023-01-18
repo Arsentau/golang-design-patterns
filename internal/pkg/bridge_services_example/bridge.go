@@ -2,13 +2,13 @@ package servicesExample
 
 import "fmt"
 
-// Setting main interface
+// Set main interface
 type DnsProvider interface {
 	SetCredentials()
 	GetZones()
 }
 
-// Implementing interface for Ns1
+// Implement interface for Ns1
 type Ns1 struct {
 	provider *DnsProvider
 }
@@ -22,7 +22,7 @@ func (n *Ns1) GetZones() {
 	fmt.Println("Getting zones information from NS1")
 }
 
-// Implementing interface for Route83
+// Implement interface for Route83
 type Route83 struct {
 	provider DnsProvider
 }
@@ -36,7 +36,7 @@ func (n *Route83) GetZones() {
 	fmt.Println("Getting zones information from Route83")
 }
 
-// Implementing interface for Cloudflare
+// Implement interface for Cloudflare
 type Cloudflare struct {
 	provider DnsProvider
 }
