@@ -5,7 +5,7 @@
 In this repository are shown some useful design patterns with go.
 
 - [Dependency Injection](internal/pkg/dependency_injection/README.md)
-  - Manual
+  - [Manual](internal/pkg/dependency_injection/manual/manual.go)
   - Containers:
     - [uber-go/dig](https://github.com/uber-go/dig)
     - [sarulabs/di](https://github.com/sarulabs/di)
