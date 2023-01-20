@@ -6,6 +6,7 @@ import (
 	manual "github.com/Arsentau/golang-design-patterns/internal/pkg/dependency_injection/manual"
 	servicesExample "github.com/Arsentau/golang-design-patterns/internal/pkg/structural/bridge_example"
 	deco "github.com/Arsentau/golang-design-patterns/internal/pkg/structural/decorator_example"
+	proxy "github.com/Arsentau/golang-design-patterns/internal/pkg/structural/proxy_example"
 )
 
 func main() {
@@ -21,5 +22,9 @@ func main() {
 
 	fmt.Println("DECORATOR PATTERN", separator)
 	deco.Decorator()
+	fmt.Println(separator)
+
+	fmt.Println("PROXY PATTERN", separator)
+	proxy.Proxy()
 	fmt.Println(separator)
 }
